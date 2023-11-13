@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    color: #ffff;
+    background-color: black;
+    overflow-x: hidden;
+}
+.cent{
+    padding: 0 10%;
+}
+.header{
+    margin: 0;
+    height: 50px;
+    padding: 3% 10%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img{
+    padding-top: 1.8rem;
+    width: 13rem;
+}
+.header a{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 10%;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 300;
+    border-radius: 5px;
+
+}
+.header #language{
+    position:absolute;
+    right: 20%;
+    color: white;
+}
+select{
+    background: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+.first-part{
+    width: 100vw;
+    height: 95vh;
+}
+#bg-img{
+    opacity: 0.5 ;
+    width: 100vw;
+    height: 95vh; 
+    position: absolute; 
+}
+
+.main-part{
+    width: 75%;
+    /* position: absolute; */
+    /* left: auto;
+    right: auto; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: aqua; */
+    /* opacity: 1; */
+    height: 80vh;
+    margin: 10% auto;
+}
+.main-part h2{
+    font-size: 3.2rem;
+    text-align: center;
+}
+.main-part h3{
+    text-align: center;
+}
+.main-part p{
+    text-align: center;
+}
+.main-part form{
+    width: max-content;
+    margin: auto;
+}
+.main-part input{
+    background: none;
+    position: relative;
+    bottom: 4px;
+    background: transparent;
+}
+button#get-started{
+    background-color: red;
+    /* width: auto; */
+    font-size: 1.5rem;
+    color: #ffff;
+    display: inline;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+}
+input#email{
+    background-color: #231e1e;
+    opacity: 0.8;
+    padding: 20px;
+    height: 49px;
+    width: 305px;
+    border-radius: 5px;
+}
+input#email::placeholder{
+    color: #ffff;
+    font-size: 1rem;
+}
+
+/* Second part */
+.second-part .cent{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    border: 0;
+    /* border-bottom: 10px solid #231e1e; */
+    border-top: 10px solid #231e1e;
+
+}
+h2{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.second-text{
+    width: 50%;
+}
+.second-part img{
+    float: right;
+    width: 50%;
+}
+/* Third part */
+#left-part-img{
+    clear: both;
+    float: left;
+}
+.third-part .cent{
+    clear: both;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    border: 0;
+    /* border-bottom: 10px solid #231e1e; */
+    border-top: 10px solid #231e1e;
+}
+/* Question answer */
+.ask-qs{
+    height: 100vh;
+    border: 0;
+    border-top: 10px solid #231e1e;
+}
