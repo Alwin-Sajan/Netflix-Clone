@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 body {
     padding: 0px;
     margin: 0px;
@@ -9,9 +10,11 @@ body {
     background-color: black;
     overflow-x: hidden;
 }
+
 .cent{
-    padding: 0 10%;
+    padding: 0 15%;
 }
+
 .header{
     margin: 0;
     height: 50px;
@@ -21,10 +24,12 @@ body {
     align-items: center;
     position: relative;
 }
+
 .header img{
     padding-top: 1.8rem;
     width: 13rem;
 }
+
 .header a{
     text-decoration: none;
     background-color: red;
@@ -37,11 +42,13 @@ body {
     border-radius: 5px;
 
 }
+
 .header #language{
     position:absolute;
     right: 20%;
     color: white;
 }
+
 select{
     background: none;
     font-size: 1.3rem;
@@ -49,12 +56,15 @@ select{
 }
 .first-part{
     width: 100vw;
-    height: 95vh;
+    max-height: 95vh;
+    /* height: auto; */
 }
+
 #bg-img{
     opacity: 0.5 ;
     width: 100vw;
-    height: 95vh; 
+    max-height: 95vh; 
+    height: auto;
     position: absolute; 
 }
 
@@ -71,51 +81,61 @@ select{
     height: 80vh;
     margin: 10% auto;
 }
+
 .main-part h2{
     font-size: 3.2rem;
     text-align: center;
 }
+
 .main-part h3{
     text-align: center;
 }
+
 .main-part p{
     text-align: center;
 }
+
 .main-part form{
     width: max-content;
     margin: auto;
 }
+
 .main-part input{
     background: none;
     position: relative;
     bottom: 4px;
     background: transparent;
 }
+
 button#get-started{
     background-color: red;
     /* width: auto; */
     font-size: 1.5rem;
     color: #ffff;
     display: inline;
-    width: 180px;
-    height: 50px;
+    /* width:10rem; */
+    height: 3rem;
+    border: 0;
     border-radius: 5px;
 }
+
 input#email{
     background-color: #231e1e;
     opacity: 0.8;
+    border: 1px solid gray;
     padding: 20px;
-    height: 49px;
-    width: 305px;
+    height: 3rem;
+    width: 20rem;
     border-radius: 5px;
 }
+
 input#email::placeholder{
     color: #ffff;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
-/* Second part */
-.second-part .cent{
+/* Left part */
+.left-part .cent{
     height: 80vh;
     display: flex;
     align-items: center;
@@ -124,6 +144,7 @@ input#email::placeholder{
     border-top: 10px solid #231e1e;
 
 }
+
 h2{
     font-weight: 900;
     font-size: 3rem;
@@ -131,23 +152,30 @@ h2{
 
 h3{
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 
 .second-text{
     width: 50%;
 }
-.second-part img{
-    float: right;
-    width: 50%;
+.left-part img{
+    /* float: right; */
+    width: 30%;
+    position: relative;
 }
-/* Third part */
-#left-part-img{
-    clear: both;
-    float: left;
+
+
+
+/* right part */
+img#right-part1{
+    /* clear: both; */
+    /* float: left; */
+    margin-left: 50px;
+    margin-top: 20px;
 }
-.third-part .cent{
-    clear: both;
+
+.right-part .cent{
+    /* clear: both; */
     height: 80vh;
     display: flex;
     align-items: center;
@@ -155,9 +183,54 @@ h3{
     /* border-bottom: 10px solid #231e1e; */
     border-top: 10px solid #231e1e;
 }
+
+
+
+
+
 /* Question answer */
 .ask-qs{
     height: 100vh;
     border: 0;
     border-top: 10px solid #231e1e;
+}
+
+
+/* new right text */
+.right-new{
+    padding: 0 12%;
+    height: auto;
+    background-color: aquamarine;
+    border: 0;
+    border-top: 10px solid #231e1e;
+    display: flex;
+}
+
+.image-left{
+    width: 50%;
+    background-color: bisque;
+    height: auto;
+    min-height: 80vh;
+    padding: 150px;
+
+}
+
+.image-left#img1{
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg');
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+.text-right{
+    /* text-align: center; */
+    /* display:list-item;
+    
+    justify-content:center ;
+    align-items: center; */
+    padding-top: 10%;
+    width: 50%;
+    background-color: chartreuse;
+    height: auto;
 }
