@@ -8,7 +8,7 @@ body {
     margin: 0px;
     color: #ffff;
     background-color: black;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 
@@ -48,9 +48,15 @@ body {
 
 select{
     background: none;
+    color: #ffff;
     font-size: 1.3rem;
     border-radius: 5px;
 }
+
+option{
+    color: black;
+}
+
 .first-part{
     width: 100vw;
     max-height: 95vh;
@@ -139,7 +145,7 @@ h2{
 
 h3{
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 /* right part */
@@ -153,7 +159,7 @@ img#right-part1{
 
 
 /* new right text */
-.right-new{
+.sub-part{
     padding: 0 12%;
     height: auto;
     /* background-color: aquamarine; */
@@ -248,6 +254,15 @@ ul{
     background-color: #352f2f;
 }
 
+.form-style{
+    padding: 24px 0;
+}
+
+.center-form{
+    display: flex;
+    gap: 10px;
+}
+
 footer{
     height: 80vh;
     padding: 4% 12%;
@@ -255,11 +270,16 @@ footer{
 }
 .footer-elements{
     
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: 40px 40px 40px 40px ;
+
+    /* display: flex;
+    flex-wrap: wrap; */
     /* justify-content: center; */
    
 }
+
 .footer-elements li{
     /* display: inline; */
     font-size: 16px;
@@ -268,4 +288,22 @@ footer{
     /* margin: 11%; */
     /* background: yellow; */
 
+}
+
+.footer-elements li a{
+    color:rgba(255,255,255,0.7);
+}
+
+footer select{
+    margin: 0 0 12px 40px ;
+}
+
+footer p{
+    color:rgba(255,255,255,0.7);
+    margin-left:40px;
+    text-align:left;
+}
+
+footer p a{
+    color: rgba(255,255,255,0.7);
 }
